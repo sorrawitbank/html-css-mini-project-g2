@@ -14,10 +14,70 @@
     <title>Education Landing Page</title>
   </head>
 
-  <body>
-    <!-- Dev 1: Jab -->
-    <header></header>
-    <!-- End of Section -->
+<body>
+  <!-- Dev 1: Jab -->
+  <header class="h-screen w-full">
+    <nav
+      class="flex justify-between items-center w-full px-10 py-3 bg-gradient-to-r from-[#FFFBF4] to-[#F7FCF9] md:px-28 lg:px-40">
+      <div class="flex justify-center items-center">
+        <img src="./assets/images/header/web-logo.svg" alt="web-logo" class="p-0 w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24">
+        <ul class="hidden text-xs lg:text-base md:flex md:gap-14 md:px-20 cursor-pointer">
+          <a class="hover:border-b-2 pb-1 hover:border-[#FFBE48]">Home</a>
+          <a class="hover:border-b-2 pb-1 hover:border-[#FFBE48]">Admission</a>
+          <a class="hover:border-b-2 pb-1 hover:border-[#FFBE48]">Academic</a>
+        </ul>
+      </div>
+      <div class="lg:hidden group relative" tabindex="0">
+        <img src="./assets/images/header/category-menu.svg" alt="category-menu" class="w-6 h-6 md:hidden">
+        <!-- hamburger menu -->
+        <div
+          class="invisible flex flex-col absolute -right-6 top-5 justify-center items-center text-[10px] px-3 py-2 gap-1 bg-white mt-3 rounded-xl shadow-xl text-gray-400 lg:hidden group-focus-within:visible">
+          <p class="hover:border-b-2 pb-1 hover:border-[#FFBE48]">Home</p>
+          <p class="hover:border-b-2 pb-1 hover:border-[#FFBE48]">Admission</p>
+          <p class="hover:border-b-2 pb-1 hover:border-[#FFBE48]">Academic</p>
+        </div>
+      </div>
+      <button
+        class="hidden md:text-xs md:flex md:px-5 md:py-3 lg:px-6 lg:py-4 bg-black text-white rounded-2xl font-semibold shadow-[0_0_20px_rgba(255,255,255,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.7)] transition-shadow duration-300">Contact
+        Now
+      </button>
+    </nav>
+    <section
+      class="w-full flex flex-col bg-gradient-to-r from-[#FFFBF4] to-[#F7FCF9] px-6 py-10 overflow-hidden md:flex md:flex-row-reverse md:justify-between md:px-28 md:py-24 lg:pl-40 lg:pr-5 md:relative">
+      <!-- Child 1: Ellipse -->
+      <div class="flex justify-center items-center w-full relative mb-8 md:mb-0 md:justify-end md:items-start">
+        <img src="./assets/images/header/ellipse.svg" alt="ellipse"
+          class="w-80 h-80 md:w-[80%] md:h-[80%] lg:w-full lg:h-full md:absolute md:-top-20" />
+        <div class="">
+          <img src="./assets/images/header/yellowpaint.svg" alt="">
+        </div>
+        <div class="z-10">
+          <img src="./assets/images/header/congratulations.svg" alt="">
+        </div>
+        <div class="z-10">
+          <img src="./assets/images/header/likecounter.svg" alt="">
+        </div>
+      </div>
+
+      <!-- Child 2: Hero content -->
+      <div class="flex flex-col items-start md:w-[50%]">
+        <p class="font-bold leading-tight text-4xl md:text-5xl lg:text-6xl">
+          Start Your <br />
+          Future <br />
+          Education
+        </p>
+        <p class="mt-5 font-normal text-[#6F6F76] text-xl md:text-base max-w-72 mb-10 leading-relaxed md:max-w-7xl">
+          Credibly redefine distinctive total linkage vis-a-vis multifunc data.
+          Phosfluorescently impact goal-oriented strategic
+        </p>
+        <button
+          class="px-10 py-4 md:px-7 md:py-5 border bg-[#FFA502] text-[#FFFFFF] font-semibold rounded-xl shadow-[0_0_30px_rgba(255,165,0,0.6)] hover:shadow-[0_0_40px_rgba(255,165,0,0.8)] transition-all md:mb-11">
+          Discover More
+        </button>
+      </div>
+    </section>
+  </header>
+  <!-- End of Section -->
 
     <main>
       <!-- Dev 2: Stang -->
@@ -110,9 +170,9 @@
 
       <!-- End of Section -->
 
-      <!-- Dev 3: Louie -->
-      <section id="departments" aria-labelledby="departments-title"></section>
-      <!-- End of Section -->
+    <!-- Dev 3: Louie -->
+    <section id="departments" aria-labelledby="departments-title"></section>
+    <!-- End of Section -->
 
       <!-- Dev 4: Prue -->
       <section
@@ -499,13 +559,14 @@
       </section>
       <!-- End of Section -->
 
-      <!-- Dev 6: James -->
-      <section id="register" aria-labelledby="cta-title"></section>
-      <!-- End of Section -->
-    </main>
-
     <!-- Dev 6: James -->
-    <footer></footer>
+    <section id="register" aria-labelledby="cta-title"></section>
     <!-- End of Section -->
-  </body>
+  </main>
+
+  <!-- Dev 6: James -->
+  <footer></footer>
+  <!-- End of Section -->
+</body>
+
 </html>
